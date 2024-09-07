@@ -668,7 +668,6 @@ export const NavSobre = styled.nav`
     }
 `
 
-
 export const NavContato = styled.nav`
     font-family: Arial, sans-serif;
     background-color: #333333;
@@ -677,7 +676,7 @@ export const NavContato = styled.nav`
     align-items: center;
     height: 100vh;
     margin: 0;
-    padding-top: 24px;
+    margin-top: 14vh;
     
     .container {
         background: #1E1E1E;

@@ -112,11 +112,11 @@ export const MainGeral = styled.main`
     padding-top: 10vh;
     flex-grow: 1;
     margin: 5vh;
+    width: 100%;
 
     .banner-container img {
         width: 100%;
         max-height: 600px;
-        
     }
 
     .container-categorias {
@@ -311,10 +311,10 @@ export const MainGeral = styled.main`
     }
 
     .card-item .card-link .card-price {
-        color: #007bff;
+        color: #00995C;
 
         .card-priceOriginal {
-            color: red;
+            color: #0056B3;
         }
     }
 
@@ -460,8 +460,6 @@ export const MainGeral = styled.main`
 `
 
 export const NavProdutos = styled.nav`
-    margin: 0;
-    padding: 0;
     display: grid;
     place-items: center;
     text-decoration: none;
@@ -481,8 +479,7 @@ export const NavProdutos = styled.nav`
         display: flex;
         justify-content: center;
         gap: 20px;
-        padding-top: 150px;
-        background-color: white;
+        padding-top: 18vh;
         width: 100%; 
     }
 
@@ -496,21 +493,24 @@ export const NavProdutos = styled.nav`
     .lista-produtos li {
         list-style: none;
         padding: 20px;
-        color: black;
+        color: white;
         font-size: 18px;
+        font-weight: 500;
         text-align: center;
+    }
+
+    .lista-produtos li:hover {
+        color: #00FF99;
     }
 
     .lista-secao-produtos li {
     list-style: none;
-    background-color: #00ff99;
     padding: 20px;
     color: white;
     font-size: 18px;
     text-align: center;
     width: 271px;
     height: 262px;
-    background-color: #00ff99;
     border-radius: 10px;
     transition: transform 0.3s ease; /* Suaviza a animação */
 }
@@ -519,11 +519,61 @@ export const NavProdutos = styled.nav`
     transform: translateY(-10px); /* Move o quadrado verde para cima */
 }
 
+    .div li{
+        margin-bottom: 150px;
+    }
+
+    /* ProductCard.css */
     .quadro-verde {
-        width: 271px;
-        height: 262px;
-        background-color: #00ff99;
-        border-radius: 10px;
+        border: 1px solid transparent;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        max-width: 300px;
+        background-color: #fff;
+    }
+
+    .quadro-verde:hover {
+        border: 2px solid #00FF99;
+    }
+
+    .quadro-imagem {
+        width: 100%;
+        height: auto;
+    }
+
+    .quadro-conteudo {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .quadro-nome {
+        font-size: 1.2em;
+        margin: 5px 0;
+        color: black;
+    }
+
+    .quadro-preco {
+        font-size: 1.1em;
+        color: #00995C;
+        font-weight: bold;
+        margin: 5px 0;
+    }
+
+    .quadro-botao {
+        background-color: #00FF99;
+        color: white; 
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    .quadro-botao:hover {
+        background-color: #00995C;
     }
 
     #banner-produtos {

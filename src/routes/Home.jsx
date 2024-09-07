@@ -4,8 +4,8 @@ import catCorrida from '../assets/Categorias/corrida.jpg'
 import catAventura from '../assets/Categorias/aventura.jpg'
 import catNatacao from '../assets/Categorias/natacao.jpg'
 import catFutebol from '../assets/Categorias/futebol.jpg'
-import Nadador from '../assets/Esportes/nadador.jpg'
-import Banner from '../assets/banner-principal.jpg'
+import Revendedor from '../assets/banner-revendedor.png'
+import Banner from '../assets/banner-prinicpal.png'
 import BolsaTermicaCard from "../assets/Produtos/Promoção/Bolsa Termica para Garrafa/bolsaTermica01-garrafa-promo.webp"
 import BolsaTrilha from '../assets/Produtos/Promoção/Bolsa de Trilha/bolsaTrilha01-promo.webp'
 import Garrafinha from '../assets/Produtos/Promoção/Garrafa de Água/garrafa01-promo.jpg'
@@ -229,8 +229,8 @@ const Home =()=>{
             </section>
             <section className="revender-container">
                 <div className="revender-banner">
-                    <img src={Nadador} alt="Banner Seja Revendedor" />
-                    <p>SEJA REVENDEDOR SPORTZONE</p>
+                    <img src={Revendedor} alt="Banner Seja Revendedor" />
+                    {/* <p>SEJA REVENDEDOR SPORTZONE</p> */}
                 </div>
                 <div className="form-wrapper">
                     <h2>Se inscreva aqui</h2>

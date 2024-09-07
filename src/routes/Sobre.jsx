@@ -1,11 +1,12 @@
 import { NavSobre } from "../styled"
+import Banner from '../assets/banner-sobre.png'
 
 const Sobre =()=>{
 
     return (
         <NavSobre>
             <div id="banner-sobre">
-                <h1>Banner</h1>
+                <img src={Banner} alt="" />
             </div>
 
             <h2 id="titulo-sobre">Sobre Nós</h2>

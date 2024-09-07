@@ -111,12 +111,13 @@ export const FooterRodape = styled.footer`
 export const MainGeral = styled.main`
     padding-top: 10vh;
     flex-grow: 1;
-    margin: 5vh;
+    margin: 0;
     width: 100%;
 
     .banner-container img {
         width: 100%;
         max-height: 600px;
+        margin: 0;
     }
 
     .container-categorias {
@@ -639,11 +640,12 @@ export const NavSobre = styled.nav`
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 130px;
+        margin-top: 15vh;
         padding: 100px;
     }
 
     #titulo-sobre{
+        margin: 0 3vw;
         color: white;
         font-size: 36px;
         padding: 50px;
@@ -651,6 +653,7 @@ export const NavSobre = styled.nav`
     }
 
     .paragrafo-sobre{
+        margin: 0 3vw;
         color: white;
         font-size: 22px;
         padding: 50px;

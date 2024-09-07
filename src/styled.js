@@ -531,7 +531,6 @@ export const NavSobre = styled.nav`
     }
 `
 
-import styled from 'styled-components';
 
 export const NavContato = styled.nav`
     font-family: Arial, sans-serif;

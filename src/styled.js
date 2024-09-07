@@ -109,14 +109,13 @@ export const FooterRodape = styled.footer`
     `;
 
 export const MainGeral = styled.main`
-    padding-top: 12vh;
+    padding-top: 10vh;
     flex-grow: 1;
     margin: 5vh;
 
-    .banner-container {
-        background: #fff;
+    .banner-container img {
         width: 100%;
-        height: auto;
+        max-height: 600px;
         
     }
 
@@ -158,7 +157,7 @@ export const MainGeral = styled.main`
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
     }
 
-    img {
+    .categorias-list img {
         display: block;
         max-width: 200px; /* Ajuste o tamanho da imagem conforme necessário */
         min-height: 200px;
@@ -311,6 +310,14 @@ export const MainGeral = styled.main`
         }
     }
 
+    .card-item .card-link .card-price {
+        color: #007bff;
+
+        .card-priceOriginal {
+            color: red;
+        }
+    }
+
     .card-list .card-link .card-title {
         margin-top: 10px;
         font-size: 0.9rem;
@@ -352,6 +359,83 @@ export const MainGeral = styled.main`
     .card-list .card-link:hover .card-button {
         color: #fff;
         background: #5372f0;
+    }
+
+    .revender-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 50px 0;
+        margin: 0 5vw;
+    }
+
+    .revender-banner{
+        width: 100%;
+        position: relative;
+        border-radius: 30px;
+        margin-right: 20px;
+    }
+
+    .revender-banner img {
+        width: 100%;
+        max-height: 240px;
+        border-radius: 10px;
+    }
+
+    .revender-banner p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 3rem;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+        text-align: center;
+    }
+
+    .revender-banner-button {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .form-wrapper {
+        width: 30%;
+        color: white;
+
+        h2{
+            padding-bottom: 15px;
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form input {
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    form button {
+        padding: 10px;
+        background-color: #00ff99;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
     }
 
     @media (max-width: 1023px) {

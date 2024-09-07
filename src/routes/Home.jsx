@@ -1,10 +1,21 @@
 import { MainGeral } from "../styled"
-import BolsaTermicaCard from "../assets/Produtos/Promoção/Bolsa Termica para Garrafa/bolsaTermica01-garrafa-promo.webp"
 import catAcademia from '../assets/Categorias/academia.jpg'
 import catCorrida from '../assets/Categorias/corrida.jpg'
 import catAventura from '../assets/Categorias/aventura.jpg'
 import catNatacao from '../assets/Categorias/natacao.jpg'
 import catFutebol from '../assets/Categorias/futebol.jpg'
+import Nadador from '../assets/Esportes/nadador.jpg'
+import Banner from '../assets/banner-principal.jpg'
+import BolsaTermicaCard from "../assets/Produtos/Promoção/Bolsa Termica para Garrafa/bolsaTermica01-garrafa-promo.webp"
+import BolsaTrilha from '../assets/Produtos/Promoção/Bolsa de Trilha/bolsaTrilha01-promo.webp'
+import Garrafinha from '../assets/Produtos/Promoção/Garrafa de Água/garrafa01-promo.jpg'
+import MaioFemininoAzul from '../assets/Produtos/Promoção/Maio Feminino de Natação/maioFeminino01-azul-promo.webp'
+import Nadadeira from '../assets/Produtos/Promoção/Nadareira de Natação/nadadeiraNatacao01-promo.webp'
+import CamisaCorrida from '../assets/Produtos/Corrida/camisa-corrida.jpg'
+import Tocanatacao from '../assets/Produtos/Natação/toca-natacao.jpg'
+import BolaFutebol from '../assets/Produtos/Futebol/bola-futebol.jpg'
+import OculosNatacao from '../assets/Produtos/Natação/oculos-natacao.jpg'
+import Tenis from '../assets/Produtos/Corrida/tenis-corrida.jpg'
 
 
 const Home =()=>{
@@ -80,7 +91,7 @@ const Home =()=>{
     return (
         <MainGeral>
             <section className="banner-container">
-                <img src="" alt="" />
+                <img src={Banner} alt="" />
             </section>
             <section className="container-categorias">
                 <ul className="categorias">
@@ -136,16 +147,22 @@ const Home =()=>{
                     <ul className="card-list">
                         <li className="card-item">
                             <a href="" className="card-link">
-                                <img src={BolsaTermicaCard} alt="card-image" className="card-image"/>
+                                <img src={CamisaCorrida} alt="card-image" className="card-image"/>
                                 <p className="bagde">25% OFF</p>
-                                <h3 className="card-title">Bolsa Térmica HW - Porta Garrafa </h3>
+                                <h3 className="card-title">Camisate de Corrida Proteção UV </h3>
                                 <div className="card-price">
-                                    <h1 className="card-priceSale">R$82,42</h1>
-                                    <h3 className="card-priceOriginal">R$109,90</h3>
+                                    <h1 className="card-priceSale">R$109,99</h1>
                                 </div>
-                                <button className="card-button">
-                                    <h3>VER</h3>
-                                </button>
+                            </a>
+                        </li>
+                        <li className="card-item">
+                            <a href="" className="card-link">
+                                <img src={BolaFutebol} alt="card-image" className="card-image"/>
+                                <p className="bagde">25% OFF</p>
+                                <h3 className="card-title">Bola de Futebol GHY Vermelha</h3>
+                                <div className="card-price">
+                                    <h1 className="card-priceSale">R$66,97</h1>
+                                </div>
                             </a>
                         </li>
                         <li className="card-item">
@@ -157,9 +174,37 @@ const Home =()=>{
                                     <h1 className="card-priceSale">R$82,42</h1>
                                     <h3 className="card-priceOriginal">R$109,90</h3>
                                 </div>
-                                <button className="card-button">
-                                    <h3>VER</h3>
-                                </button>
+                            </a>
+                        </li>
+                        <li className="card-item">
+                            <a href="" className="card-link">
+                                <img src={Tenis} alt="card-image" className="card-image"/>
+                                <p className="bagde">25% OFF</p>
+                                <h3 className="card-title">Tênis Para Corrida</h3>
+                                <div className="card-price">
+                                    <h1 className="card-priceSale">R$123,89</h1>
+                                </div>
+                            </a>
+                        </li>
+                        <li className="card-item">
+                            <a href="" className="card-link">
+                                <img src={OculosNatacao} alt="card-image" className="card-image"/>
+                                <p className="bagde">25% OFF</p>
+                                <h3 className="card-title">Óculos de Natação Profissional</h3>
+                                <div className="card-price">
+                                    <h1 className="card-priceSale">R$40,56</h1>
+                                </div>
+                            </a>
+                        </li>
+                        <li className="card-item">
+                            <a href="" className="card-link">
+                                <img src={Garrafinha} alt="card-image" className="card-image"/>
+                                <p className="bagde">25% OFF</p>
+                                <h3 className="card-title">Garrafinha Térmica MetalGT Cor Azul </h3>
+                                <div className="card-price">
+                                    <h1 className="card-priceSale">R$55,90</h1>
+                                    <h3 className="card-priceOriginal">R$99,90</h3>
+                                </div>
                             </a>
                         </li>
                         <li className="card-item">
@@ -171,9 +216,103 @@ const Home =()=>{
                                     <h1 className="card-priceSale">R$82,42</h1>
                                     <h3 className="card-priceOriginal">R$109,90</h3>
                                 </div>
-                                <button className="card-button">
-                                    <h3>VER</h3>
-                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                    <button id="nextSlide" className="slide-button material-symbols-outlined">chevron_right</button>
+                    <div className="slider-scrollbar">
+                        <div className="scrollbar-track">
+                            <div className="scrollbar-thumb"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className="revender-container">
+                <div className="revender-banner">
+                    <img src={Nadador} alt="Banner Seja Revendedor" />
+                    <p>SEJA REVENDEDOR SPORTZONE</p>
+                </div>
+                <div className="form-wrapper">
+                    <h2>Se inscreva aqui</h2>
+                    <form>
+                    <input type="text" placeholder="Nome" />
+                    <input type="email" placeholder="Email" />
+                    <input type="tel" placeholder="Telefone" />
+                    <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </section>
+            <section className="container">
+                <div className="container-title">
+                    <h1>Com o preço mais baixo</h1>
+                </div>
+                <div className="card-container">
+                    <button id="prevSlide" className="slide-button material-symbols-outlined">chevron_left</button>
+                    <ul className="card-list">
+                        <li className="card-item">
+                            <a href="" className="card-link">
+                                <img src={BolsaTermicaCard} alt="card-image" className="card-image"/>
+                                <p className="bagde">25% OFF</p>
+                                <h3 className="card-title">Bolsa Térmica HW - Porta Garrafa </h3>
+                                <div className="card-price">
+                                    <h1 className="card-priceSale">R$82,42</h1>
+                                    <h3 className="card-priceOriginal">R$109,90</h3>
+                                </div>
+                            </a>
+                        </li>
+                        <li className="card-item">
+                            <a href="" className="card-link">
+                                <img src={MaioFemininoAzul} alt="card-image" className="card-image"/>
+                                <p className="bagde">25% OFF</p>
+                                <h3 className="card-title">Maio Feminino de Natação Azul</h3>
+                                <div className="card-price">
+                                    <h1 className="card-priceSale">R$49,90</h1>
+                                    <h3 className="card-priceOriginal">R$75,65</h3>
+                                </div>
+                            </a>
+                        </li>
+                        <li className="card-item">
+                            <a href="" className="card-link">
+                                <img src={Nadadeira} alt="card-image" className="card-image"/>
+                                <p className="bagde">25% OFF</p>
+                                <h3 className="card-title">Nadadeira Profissional Cor Rose </h3>
+                                <div className="card-price">
+                                    <h1 className="card-priceSale">R$178,99</h1>
+                                    <h3 className="card-priceOriginal">R$109,90</h3>
+                                </div>
+                            </a>
+                        </li>
+                        <li className="card-item">
+                            <a href="" className="card-link">
+                                <img src={Garrafinha} alt="card-image" className="card-image"/>
+                                <p className="bagde">25% OFF</p>
+                                <h3 className="card-title">Garrafinha Térmica MetalGT Cor Azul </h3>
+                                <div className="card-price">
+                                    <h1 className="card-priceSale">R$55,90</h1>
+                                    <h3 className="card-priceOriginal">R$99,90</h3>
+                                </div>
+                            </a>
+                        </li>
+                        <li className="card-item">
+                            <a href="" className="card-link">
+                                <img src={BolsaTrilha} alt="card-image" className="card-image"/>
+                                <p className="bagde">25% OFF</p>
+                                <h3 className="card-title">Bolsa Para Trilha Cor Amarela </h3>
+                                <div className="card-price">
+                                    <h1 className="card-priceSale">R$139,90</h1>
+                                    <h3 className="card-priceOriginal">R$234,99</h3>
+                                </div>
+                            </a>
+                        </li>
+                        <li className="card-item">
+                            <a href="" className="card-link">
+                                <img src={Tocanatacao} alt="card-image" className="card-image"/>
+                                <p className="bagde">25% OFF</p>
+                                <h3 className="card-title">Touca de Natação Cor Azul </h3>
+                                <div className="card-price">
+                                    <h1 className="card-priceSale">R$19,99</h1>
+                                    <h3 className="card-priceOriginal">R$44,99</h3>
+                                </div>
                             </a>
                         </li>
                         <li className="card-item">
@@ -185,51 +324,6 @@ const Home =()=>{
                                     <h1 className="card-priceSale">R$82,42</h1>
                                     <h3 className="card-priceOriginal">R$109,90</h3>
                                 </div>
-                                <button className="card-button">
-                                    <h3>VER</h3>
-                                </button>
-                            </a>
-                        </li>
-                        <li className="card-item">
-                            <a href="" className="card-link">
-                                <img src={BolsaTermicaCard} alt="card-image" className="card-image"/>
-                                <p className="bagde">25% OFF</p>
-                                <h3 className="card-title">Bolsa Térmica HW - Porta Garrafa </h3>
-                                <div className="card-price">
-                                    <h1 className="card-priceSale">R$82,42</h1>
-                                    <h3 className="card-priceOriginal">R$109,90</h3>
-                                </div>
-                                <button className="card-button">
-                                    <h3>VER</h3>
-                                </button>
-                            </a>
-                        </li>
-                        <li className="card-item">
-                            <a href="" className="card-link">
-                                <img src={BolsaTermicaCard} alt="card-image" className="card-image"/>
-                                <p className="bagde">25% OFF</p>
-                                <h3 className="card-title">Bolsa Térmica HW - Porta Garrafa </h3>
-                                <div className="card-price">
-                                    <h1 className="card-priceSale">R$82,42</h1>
-                                    <h3 className="card-priceOriginal">R$109,90</h3>
-                                </div>
-                                <button className="card-button">
-                                    <h3>VER</h3>
-                                </button>
-                            </a>
-                        </li>
-                        <li className="card-item">
-                            <a href="" className="card-link">
-                                <img src={BolsaTermicaCard} alt="card-image" className="card-image"/>
-                                <p className="bagde">25% OFF</p>
-                                <h3 className="card-title">Bolsa Térmica HW - Porta Garrafa </h3>
-                                <div className="card-price">
-                                    <h1 className="card-priceSale">R$82,42</h1>
-                                    <h3 className="card-priceOriginal">R$109,90</h3>
-                                </div>
-                                <button className="card-button">
-                                    <h3>VER</h3>
-                                </button>
                             </a>
                         </li>
                     </ul>

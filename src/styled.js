@@ -727,3 +727,29 @@ export const NavContato = styled.nav`
         color: #00FF99;
     }
 `;
+
+export const MainErro = styled.main`
+    width: 100%;
+    max-height: 100vh;
+    background: #0056B3;
+    text-align: center;
+    margin-top: 14.85%;
+    color: #fff;
+
+    p{
+        font-size: 30px;
+        padding: 20px;
+    }
+
+    h1{
+        font-size: 300px;
+        text-shadow: 2px 2 px 4px #00FF99;
+    }
+
+    .voltar-button a{
+        border: none;
+        background: #00FF99;
+        color: #0056B3;
+        font-size: 20px;
+    }
+`

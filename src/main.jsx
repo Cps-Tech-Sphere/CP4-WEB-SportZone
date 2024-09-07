@@ -7,6 +7,7 @@ import Home from './routes/Home.jsx'
 import Produtos from './routes/Produtos.jsx'
 import Sobre from './routes/Sobre.jsx'
 import Contato from './routes/Contato.jsx'
+import Erro from './routes/Erro.jsx'
 import GlobalStyled from './global-styled.js'
 
 const router = createBrowserRouter(
@@ -14,6 +15,7 @@ const router = createBrowserRouter(
     {
       path:'/',
       element: <App/>,
+      errorElement:<Erro/>,
       children:[
         {
           path:'/',

@@ -97,5 +97,6 @@ http://localhost:3000
 ├── package.json         # Dependências do projeto
 └── README.md            # Documentação do projeto
 ```
-## Vídeo Expositivo
+## Links Importantes
 [Linkedin - Vídeo SportZone](https://www.linkedin.com/posts/jean-matheus-mohamed-de-oliveira-263a40295_desenvolvimentoweb-react-javascript-activity-7238352454503792643-xyyC?utm_source=share&utm_medium=member_desktop)
+[Repositório GitHub](https://github.com/Cps-Tech-Sphere/CP4-WEB-SportZone)
